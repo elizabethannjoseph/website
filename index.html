@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Elizabeth Ann Joseph's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Elizabeth Ann Joseph</h2>
+        <p>Software Developer with a passion for learning and improving skills in C, C++, Python, cloud computing, and web development.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/elizabeth-joseph-a037b7296/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/elizabethannjoseph" target="_blank">GitHub</a>
+        </div>
+        <div class="resume-download">
+            <a href="resume.pdf" download="resume.pdf" class="download-btn">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C, C++, Python</li>
+            <li>SQL, Web Development</li>
+            <li>Critical Thinking</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Chess Program - A simple program built to play chess.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:liza.joseph0202@gmail.com">liza.joseph0202@gmail.com</a></p>
+        <p>Phone: 9941537747</p>
+    </section>
+
+    <!-- Chatbot Section -->
+    <section id="chatbot">
+        <h2>Chatbot</h2> <!-- Added title for the chatbot section -->
+        <div class="clickable-questions">
+            <ul>
+                <li><button onclick="askQuestion('What are your skills?')">What are your skills?</button></li>
+                <li><button onclick="askQuestion('Can you tell me about your projects?')">Can you tell me about your projects?</button></li>
+                <li><button onclick="askQuestion('How can I contact you?')">How can I contact you?</button></li>
+                <li><button onclick="askQuestion('Where did you study?')">Where did you study?</button></li>
+                <li><button onclick="askQuestion('What programming languages do you know?')">What programming languages do you know?</button></li>
+            </ul>
+        </div>
+
+        <!-- Chatbox and replying area below the questions -->
+        <div class="chat-container">
+            <div id="chatbox"></div>
+            <input type="text" id="userInput" placeholder="Type a message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elizabeth Ann Joseph</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
